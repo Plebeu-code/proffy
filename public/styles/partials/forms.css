@@ -1,0 +1,68 @@
+.select-block label,
+.input-block label,
+.select-block label {
+    font-size: 1.4rem;
+    color: var(--color-text-complement);
+}
+
+.textarea-block textarea,
+.input-block input,
+.select-block select {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+    outline: 0;
+    padding: 1 1.6rem;
+    font: 1.6rem Archivo;
+    display: flex;
+}
+
+.input-time {
+    background-color: #fff;
+    margin-top: 0.8rem;
+    height: 5.6rem;
+    border-radius: 0.8rem;
+    padding: 0 1.6rem;
+}
+.input-time input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+
+}
+
+ .textarea-block textarea {
+    width: 100%;
+    height: 16rem;
+    min-height: 8rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+    outline: 0;
+    resize: none;
+    padding: 1.2rem 0rem;
+    font: 1.6rem Archivo; 
+}
+
+.input-block,
+.textarea-block {
+    position: relative;
+}
+
+.input-block:focus-within::after,
+.textarea-block:focus-within::after {
+    content: "";
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background: var(--color-primary-light);
+    position: absolute;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 0px;
+}
